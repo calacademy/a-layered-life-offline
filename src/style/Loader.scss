@@ -1,0 +1,160 @@
+#loader {
+
+  #asset-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 998;
+    opacity: 0;
+    img {
+      width: 50px;
+      height: 30px;
+      float: left;
+    }
+
+    #loader-source-images {
+      div {
+        width: 50px;
+        height: 50px;
+        float: left;
+        overflow: hidden;
+        background-position: 0, 0;
+        background-repeat: no-repeat;
+      }
+
+      #bg-menu {
+        background-image: url('../img/bg-menu.png');
+      }
+      #icon-case-for-collections2x {
+        background-image: url('../img/icon-case-for-collections@2x.png');
+      }
+      #slider-bg2x {
+        background-image: url('../img/slider-bg@2x.png');
+      }
+      #bg-water {
+        background-image: url('../img/bg-water.gif');
+      }
+      #icon-some-things-never-change2x {
+        background-image: url('../img/icon-some-things-never-change@2x.png');
+      }
+      #slider-blue-whale2x {
+        background-image: url('../img/slider-blue-whale@2x.png');
+      }
+      #btn-next-blue {
+        background-image: url('../img/btn-next-blue.svg	');
+      }
+      #icon-value-of-variations2x {
+        background-image: url('../img/icon-value-of-variations@2x.png');
+      }
+      #slider-fin-whale2x {
+        background-image: url('../img/slider-fin-whale@2x.png');
+      }
+      #btn-next-white {
+        background-image: url('../img/btn-next-white.svg');
+      }
+      #list-number-1 {
+        background-image: url('../img/list-number-1.png');
+      }
+      #slider-sperm-whale2x {
+        background-image: url('../img/slider-sperm-whale@2x.png');
+      }
+      #close-btn-blue {
+        background-image: url('../img/close-btn-blue.svg');
+      }
+      #list-number-2 {
+        background-image: url('../img/list-number-2.png');
+      }
+      #close-btn-white {
+        background-image: url('../img/close-btn-white.svg');
+      }
+      #list-number-3 {
+        background-image: url('../img/list-number-3.png');
+      }
+      #blue-whale-0 {
+        background-image: url('../img/slides/blue-whale-0.jpg');
+      }
+      #blue-whale-2 {
+        background-image: url('../img/slides/blue-whale-2.jpg');
+      }
+      #fin-whale-2 {
+        background-image: url('../img/slides/fin-whale-2.jpg');
+      }
+      #sperm-whale-1 {
+        background-image: url('../img/slides/sperm-whale-1.jpg');
+      }
+      #blue-whale-1 {
+        background-image: url('../img/slides/blue-whale-1.jpg');
+      }
+      #fin-whale-1 {
+        background-image: url('../img/slides/fin-whale-1.jpg');
+      }
+      #sperm-whale-0 {
+        background-image: url('../img/slides/sperm-whale-0.jpg');
+      }
+      #sperm-whale-2 {
+        background-image: url('../img/slides/sperm-whale-2.jpg');
+      }
+
+    }
+
+    // dom render all fonts
+    p {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 12px;
+      color: #333;
+    }
+    p.wa {
+      font-family: 'W-Condensed-Medium';
+    }
+    p.wb {
+      font-family: 'W-Condensed-Semibold';
+    }
+    p.wc {
+      font-family: 'W-Book';
+    }
+    p.wd {
+      font-family: 'W-Medium';
+    }
+    p.we {
+      font-family: 'W-Narrow-Semibold';
+    }
+    p.wf {
+      font-family: 'W-Narrow-Book';
+    }
+    p.wg {
+      font-family: 'W-Semibold';
+    }
+    p.ca {
+      font-family: 'SourceHanSansCN-Normal';
+    }
+    p.cb {
+      font-family: 'SourceHanSansCN-Medium';
+    }
+    p.cc {
+      font-family: 'SourceHanSansCN-Bold';
+    }
+  }
+
+  #message-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 997;
+    p {
+      margin: 0;
+      padding: 0;
+      margin-top: 500px;
+      text-align: center;
+      vertical-align: middle;
+      color: #ffffff;
+      font-family: 'W-Narrow-Book', Helvetica, Arial, sans-serif;
+      font-size: 79px;
+      line-height: 79px;
+      font-weight: normal;
+      letter-spacing: 3px;
+    }
+
+  }
+
+}
