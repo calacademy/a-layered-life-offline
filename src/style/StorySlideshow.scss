@@ -1,0 +1,424 @@
+@import "./_vars.scss";
+
+#story-slideshow {
+
+  width: 1820px;
+  height: 900px;
+
+  button.story-slideshow-connector-btn {
+    position: absolute;
+    color: #fff;
+    font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+    width: 362px;
+    padding: 16px 15px 13px 15px;
+    border: 2px solid #fff;
+    outline: none;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  // blue whale connector btn
+  #story-slideshow-connector-btn-0 {
+    bottom: 35px;
+    left: 940px;
+  }
+  // sperm whale connector btn
+  #story-slideshow-connector-btn-1 {
+    bottom: 35px;
+    left: 690px;
+  }
+  // fin whale connector btn
+  #story-slideshow-connector-btn-2 {
+    bottom: 35px;
+    left: 690px;
+  }
+
+  button.story-slideshow-btn-close {
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    z-index: 999;
+    width: 62px;
+    height: 62px;
+    //background-size: 62px;
+    background-image: url('../img/close-btn-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    //background-size: 100%;
+    //background-color: transparent;
+    border: none;
+    outline: none;
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  #slideshow-left-mask {
+    position: absolute;
+    top: 0px;
+    left: 595px;
+    z-index: 998;
+    width: 142px;
+    height: 880px;
+    background-color: #fff;
+    pointer-events: none;
+  }
+  #slideshow-right-mask {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 998;
+    width: 142px;
+    height: 880px;
+    background-color: #fff;
+    pointer-events: none;
+  }
+
+  #story-slideshow-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-color: $blue;
+    background-image: url('../img/bg-water.gif');
+    background-repeat: no-repeat;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.4s $easing;
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .slideshow-container-inner {
+
+      //z-index: 1;
+      width: 1770px;
+      height: 948px;
+      position: relative;
+      top: 88px;
+      left: 75px;
+
+      #infobar {
+        //padding: 50px 50px 50px 50px;
+        width: 595px;
+        height: 948px;
+        float: left;
+        background-color: $blue;
+        overflow: hidden;
+
+        .infobar-text-container {
+          width: 370px;
+          margin-top: 39px;
+          margin-left: 42px;
+
+          h1 {
+            font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+            font-size: 36px;
+            line-height: 38px;
+            font-weight: normal;
+            padding-bottom: 8px;
+            color: $blueTrans;
+          }
+          p {
+            font-family: 'W-Book', 'SourceHanSansCN-Normal';
+            font-size: 22px;
+            line-height: 27px;
+            font-weight: normal;
+            padding-bottom: 8px;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+      .infobar-0 {
+        background-image: url('../img/icon-value-of-variations@2x.png');
+        background-repeat: no-repeat;
+        background-position: 54px 356px;
+        background-size: 75%;
+      }
+      .infobar-1 {
+        background-image: url('../img/icon-case-for-collections@2x.png');
+        background-repeat: no-repeat;
+        background-position: 50% 400px;
+        background-size: 70%;
+      }
+      .infobar-2 {
+        background-image: url('../img/icon-some-things-never-change@2x.png');
+        background-repeat: no-repeat;
+        background-position: 50% 400px;
+        background-size: 70%;
+      }
+
+
+      .carousel {
+        width: 1175px;
+        height: 948px;
+        background-color: #fff;
+        overflow: hidden;
+        //position: relative;
+        //left: 595px;
+        float: left;
+        //display: none;
+
+        .carousel-inner {
+          width: 100%;
+          .item {
+            width: 1175px;
+            height: 944px;
+            //background-color: #ddd;
+            transition: transform 0.3s $easing;
+
+            // popup slideshow slide images
+            .slideshow-slide-image {
+              position: absolute;
+              z-index: 1;
+              background-repeat: no-repeat;
+              width: 890px;
+              height: 478px;
+              background-size: 100%;
+              //background-position: 142px 0px;
+              margin-left: 142px;
+              margin-top: 40px;
+            }
+
+            // blue whale popup slide images
+            #slideshow-0-slide-0-image {
+              background-image: url('../img/slides/blue-whale-0.jpg');
+            }
+            #slideshow-0-slide-1-image {
+              background-image: url('../img/slides/blue-whale-1.jpg');
+            }
+            #slideshow-0-slide-2-image {
+              background-image: url('../img/slides/blue-whale-2.jpg');
+            }
+            // sperm whale popup slide images
+            #slideshow-1-slide-0-image {
+              background-image: url('../img/slides/sperm-whale-0.jpg');
+            }
+            #slideshow-1-slide-1-image {
+              background-image: url('../img/slides/sperm-whale-1.jpg');
+            }
+            #slideshow-1-slide-2-image {
+              background-image: url('../img/slides/sperm-whale-2.jpg');
+            }
+            // fin whale popup slide images
+            #slideshow-2-slide-0-image {
+              // no image
+            }
+            #slideshow-2-slide-1-image {
+              background-image: url('../img/slides/fin-whale-1.jpg');
+            }
+            #slideshow-2-slide-2-image {
+              background-image: url('../img/slides/fin-whale-2.jpg');
+            }
+
+            // popup slideshow slide text
+            .slideshow-slide-text-container {
+              width: 530px;
+              margin-left: 322px;
+              position: absolute;
+              z-index: 1;
+              bottom: 80px;
+              h1 {
+                font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: normal;
+                padding-bottom: 8px;
+                color: $blueTrans;
+              }
+              p {
+                font-family: 'W-Book', 'SourceHanSansCN-Normal';
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: normal;
+                padding-bottom: 8px;
+                color: #000;
+              }
+            }
+
+            // fin whale popup slideshow slide text
+            #slideshow-2-slide-0-text-container {
+              top: 180px;
+              width: 380px;
+            }
+
+            // popup slideshow slide captions
+            .slideshow-slide-caption {
+              position: absolute;
+              z-index: 1;
+            }
+
+            // blue whale popup slideshow slide captions
+            #slideshow-0-slide-0-caption-0 {
+              @include caption-style-1;
+              top: 540px;
+              left: 180px;
+            }
+            #slideshow-0-slide-0-caption-1 {
+              @include caption-style-1;
+              top: 540px;
+              left: 490px;
+            }
+            #slideshow-0-slide-0-caption-2 {
+              @include caption-style-1;
+              top: 540px;
+              left: 800px;
+            }
+            #slideshow-0-slide-1-caption-0 {
+              @include caption-style-2;
+              top: 540px;
+              left: 142px;
+            }
+            #slideshow-0-slide-1-caption-1 {
+              @include caption-style-2;
+              top: 540px;
+              left: 610px;
+            }
+            #slideshow-0-slide-2-caption-0 {
+              @include caption-style-2;
+              top: 540px;
+              left: 142px;
+            }
+            #slideshow-0-slide-2-caption-1 {
+              @include caption-style-2;
+              top: 540px;
+              left: 610px;
+            }
+
+            // sperm whale popup slideshow slide captions
+            // there are no captions for this content section
+
+            // fin whale popup slideshow slide captions
+            #slideshow-2-slide-0-caption-0 {
+              @include caption-style-3;
+              top: 340px;
+              background-image: url('../img/list-number-1.png');
+            }
+            #slideshow-2-slide-0-caption-1 {
+              @include caption-style-3;
+              top: 440px;
+              background-image: url('../img/list-number-2.png');
+            }
+            #slideshow-2-slide-0-caption-2 {
+              @include caption-style-3;
+              top: 540px;
+              background-image: url('../img/list-number-3.png');
+            }
+
+            #slideshow-2-slide-2-caption-0 {
+              @include caption-style-4;
+              top: 64px;
+              left: 240px;
+            }
+            #slideshow-2-slide-2-caption-1 {
+              @include caption-style-5;
+              top: 228px;
+              left: 160px;
+            }
+            #slideshow-2-slide-2-caption-2 {
+              @include caption-style-6;
+              top: 436px;
+              right: 234px;
+            }
+            #slideshow-2-slide-2-caption-3 {
+              @include caption-style-7;
+              top: 112px;
+              left: 406px;
+            }
+
+
+          }
+        }
+      }
+      /*
+      .carousel-indicators,
+      .carousel-control {
+        display: none;
+      }
+      */
+      .carousel-indicators {
+        //display: none;
+        bottom: 10px;
+        li {
+          background-color: $grayDark;
+          border: none;
+          opacity: .5;
+          width: 10px;
+          height: 10px;
+          margin: 6px;
+          //border: 1px solid $grayDark;
+          border-radius: 10px;
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+      .carousel-control {
+        background-image: none;
+        //background-color: #ff0000;
+        height: 42px;
+        width: 42px;
+        margin-top: 885px;
+        opacity: 1 !important;
+        &:active {
+          opacity: .7 !important;
+        }
+        //background-color: #0000ff;
+
+        span {
+          margin-top: -15px !important;
+        }
+        &.left {
+          margin-left: 20px;
+          width: 42px;
+          height: 42px;
+          background-image: url('../img/btn-next-blue.svg');
+          background-size: 42px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          transform: scaleX(-1);
+          filter: FlipH;
+          span {
+            display: none;
+            //margin-left: -15px;
+          }
+        }
+        &.right {
+          //position: relative;
+          //top: 20px;
+          //right: 20px;
+          //z-index: 999;
+          margin-right: 20px;
+          width: 42px;
+          height: 42px;
+          background-image: url('../img/btn-next-blue.svg');
+          background-size: 42px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          span {
+            display: none;
+            //margin-right: -15px;
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+
+}

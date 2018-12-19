@@ -1,0 +1,1774 @@
+#story {
+  width: 100%;
+  height: 100%; }
+  #story button.story-btn-close {
+    position: absolute;
+    top: 77px;
+    right: 50px;
+    z-index: 3;
+    width: 62px;
+    height: 62px;
+    background-image: url("../img/close-btn-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none;
+    outline: none; }
+    #story button.story-btn-close:active {
+      opacity: 0.7; }
+  #story #story-helper-text {
+    position: absolute;
+    top: 910px;
+    left: 210px;
+    z-index: 1000;
+    font-family: 'W-Narrow-Book', 'SourceHanSansCN-Normal';
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    color: #fff; }
+  #story #container-story-slideshow {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0; }
+  #story #container-story-text {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0; }
+  #story #container-story-caption {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0; }
+  #story #story-animation {
+    position: absolute;
+    z-index: 1;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden; }
+    #story #story-animation #container-circles #circle0 {
+      left: 49px; }
+    #story #story-animation #container-circles #circle1 {
+      left: 494px;
+      visibility: hidden; }
+    #story #story-animation #container-circles #circle2 {
+      left: 939px;
+      visibility: hidden; }
+    #story #story-animation #container-circles #circle3 {
+      left: 1384px;
+      visibility: hidden; }
+    #story #story-animation #container-circles .circle {
+      position: absolute;
+      top: 1002px;
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #fff; }
+    #story #story-animation #container-circles .fill {
+      visibility: visible !important; }
+    #story #story-animation .container-images {
+      position: relative;
+      height: 1080px;
+      float: left;
+      animation-fill-mode: forwards; }
+      #story #story-animation .container-images img {
+        width: 1920px;
+        height: 1080px;
+        border: none;
+        display: block !important;
+        float: left; }
+    #story #story-animation .container-slider {
+      width: 100%;
+      position: absolute;
+      z-index: 500;
+      top: 1012px; }
+    #story #story-animation .slider {
+      -webkit-appearance: none;
+      width: 1900px;
+      margin-left: 78px;
+      height: 20px;
+      background: none !important;
+      outline: none;
+      transition: opacity .2s; }
+    #story #story-animation .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      cursor: pointer;
+      width: 119px;
+      height: 120px;
+      background-size: 99%;
+      background-repeat: no-repeat;
+      margin-top: -6px;
+      margin-left: -68px;
+      outline: none;
+      border: none; }
+    #story #story-animation #slider-blue-whale .slider::-webkit-slider-thumb {
+      background-image: url("../img/slider-blue-whale@2x.png"); }
+    #story #story-animation #slider-sperm-whale .slider::-webkit-slider-thumb {
+      background-image: url("../img/slider-sperm-whale@2x.png"); }
+    #story #story-animation #slider-fin-whale .slider::-webkit-slider-thumb {
+      background-image: url("../img/slider-fin-whale@2x.png"); }
+    #story #story-animation #progress-bar {
+      position: absolute;
+      z-index: 3;
+      top: 1012px;
+      height: 20px;
+      width: 0px;
+      margin-left: 60px;
+      background-color: #fff; }
+    #story #story-animation #slider-bg {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      width: 1920px;
+      height: 100px;
+      background-image: url("../img/slider-bg@2x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100%; }
+    #story #story-animation #animation-blue-whale .container-images {
+      width: 522240px; }
+      #story #story-animation #animation-blue-whale .container-images.anim-1 {
+        transform: translateX(0px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-2 {
+        transform: translateX(-1920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-3 {
+        transform: translateX(-3840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-4 {
+        transform: translateX(-5760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-5 {
+        transform: translateX(-7680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-6 {
+        transform: translateX(-9600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-7 {
+        transform: translateX(-11520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-8 {
+        transform: translateX(-13440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-9 {
+        transform: translateX(-15360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-10 {
+        transform: translateX(-17280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-11 {
+        transform: translateX(-19200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-12 {
+        transform: translateX(-21120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-13 {
+        transform: translateX(-23040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-14 {
+        transform: translateX(-24960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-15 {
+        transform: translateX(-26880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-16 {
+        transform: translateX(-28800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-17 {
+        transform: translateX(-30720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-18 {
+        transform: translateX(-32640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-19 {
+        transform: translateX(-34560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-20 {
+        transform: translateX(-36480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-21 {
+        transform: translateX(-38400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-22 {
+        transform: translateX(-40320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-23 {
+        transform: translateX(-42240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-24 {
+        transform: translateX(-44160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-25 {
+        transform: translateX(-46080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-26 {
+        transform: translateX(-48000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-27 {
+        transform: translateX(-49920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-28 {
+        transform: translateX(-51840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-29 {
+        transform: translateX(-53760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-30 {
+        transform: translateX(-55680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-31 {
+        transform: translateX(-57600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-32 {
+        transform: translateX(-59520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-33 {
+        transform: translateX(-61440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-34 {
+        transform: translateX(-63360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-35 {
+        transform: translateX(-65280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-36 {
+        transform: translateX(-67200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-37 {
+        transform: translateX(-69120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-38 {
+        transform: translateX(-71040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-39 {
+        transform: translateX(-72960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-40 {
+        transform: translateX(-74880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-41 {
+        transform: translateX(-76800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-42 {
+        transform: translateX(-78720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-43 {
+        transform: translateX(-80640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-44 {
+        transform: translateX(-82560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-45 {
+        transform: translateX(-84480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-46 {
+        transform: translateX(-86400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-47 {
+        transform: translateX(-88320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-48 {
+        transform: translateX(-90240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-49 {
+        transform: translateX(-92160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-50 {
+        transform: translateX(-94080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-51 {
+        transform: translateX(-96000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-52 {
+        transform: translateX(-97920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-53 {
+        transform: translateX(-99840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-54 {
+        transform: translateX(-101760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-55 {
+        transform: translateX(-103680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-56 {
+        transform: translateX(-105600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-57 {
+        transform: translateX(-107520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-58 {
+        transform: translateX(-109440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-59 {
+        transform: translateX(-111360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-60 {
+        transform: translateX(-113280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-61 {
+        transform: translateX(-115200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-62 {
+        transform: translateX(-117120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-63 {
+        transform: translateX(-119040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-64 {
+        transform: translateX(-120960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-65 {
+        transform: translateX(-122880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-66 {
+        transform: translateX(-124800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-67 {
+        transform: translateX(-126720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-68 {
+        transform: translateX(-128640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-69 {
+        transform: translateX(-130560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-70 {
+        transform: translateX(-132480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-71 {
+        transform: translateX(-134400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-72 {
+        transform: translateX(-136320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-73 {
+        transform: translateX(-138240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-74 {
+        transform: translateX(-140160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-75 {
+        transform: translateX(-142080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-76 {
+        transform: translateX(-144000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-77 {
+        transform: translateX(-145920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-78 {
+        transform: translateX(-147840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-79 {
+        transform: translateX(-149760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-80 {
+        transform: translateX(-151680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-81 {
+        transform: translateX(-153600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-82 {
+        transform: translateX(-155520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-83 {
+        transform: translateX(-157440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-84 {
+        transform: translateX(-159360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-85 {
+        transform: translateX(-161280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-86 {
+        transform: translateX(-163200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-87 {
+        transform: translateX(-165120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-88 {
+        transform: translateX(-167040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-89 {
+        transform: translateX(-168960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-90 {
+        transform: translateX(-170880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-91 {
+        transform: translateX(-172800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-92 {
+        transform: translateX(-174720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-93 {
+        transform: translateX(-176640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-94 {
+        transform: translateX(-178560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-95 {
+        transform: translateX(-180480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-96 {
+        transform: translateX(-182400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-97 {
+        transform: translateX(-184320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-98 {
+        transform: translateX(-186240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-99 {
+        transform: translateX(-188160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-100 {
+        transform: translateX(-190080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-101 {
+        transform: translateX(-192000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-102 {
+        transform: translateX(-193920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-103 {
+        transform: translateX(-195840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-104 {
+        transform: translateX(-197760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-105 {
+        transform: translateX(-199680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-106 {
+        transform: translateX(-201600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-107 {
+        transform: translateX(-203520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-108 {
+        transform: translateX(-205440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-109 {
+        transform: translateX(-207360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-110 {
+        transform: translateX(-209280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-111 {
+        transform: translateX(-211200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-112 {
+        transform: translateX(-213120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-113 {
+        transform: translateX(-215040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-114 {
+        transform: translateX(-216960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-115 {
+        transform: translateX(-218880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-116 {
+        transform: translateX(-220800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-117 {
+        transform: translateX(-222720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-118 {
+        transform: translateX(-224640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-119 {
+        transform: translateX(-226560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-120 {
+        transform: translateX(-228480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-121 {
+        transform: translateX(-230400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-122 {
+        transform: translateX(-232320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-123 {
+        transform: translateX(-234240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-124 {
+        transform: translateX(-236160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-125 {
+        transform: translateX(-238080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-126 {
+        transform: translateX(-240000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-127 {
+        transform: translateX(-241920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-128 {
+        transform: translateX(-243840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-129 {
+        transform: translateX(-245760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-130 {
+        transform: translateX(-247680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-131 {
+        transform: translateX(-249600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-132 {
+        transform: translateX(-251520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-133 {
+        transform: translateX(-253440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-134 {
+        transform: translateX(-255360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-135 {
+        transform: translateX(-257280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-136 {
+        transform: translateX(-259200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-137 {
+        transform: translateX(-261120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-138 {
+        transform: translateX(-263040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-139 {
+        transform: translateX(-264960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-140 {
+        transform: translateX(-266880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-141 {
+        transform: translateX(-268800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-142 {
+        transform: translateX(-270720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-143 {
+        transform: translateX(-272640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-144 {
+        transform: translateX(-274560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-145 {
+        transform: translateX(-276480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-146 {
+        transform: translateX(-278400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-147 {
+        transform: translateX(-280320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-148 {
+        transform: translateX(-282240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-149 {
+        transform: translateX(-284160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-150 {
+        transform: translateX(-286080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-151 {
+        transform: translateX(-288000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-152 {
+        transform: translateX(-289920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-153 {
+        transform: translateX(-291840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-154 {
+        transform: translateX(-293760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-155 {
+        transform: translateX(-295680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-156 {
+        transform: translateX(-297600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-157 {
+        transform: translateX(-299520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-158 {
+        transform: translateX(-301440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-159 {
+        transform: translateX(-303360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-160 {
+        transform: translateX(-305280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-161 {
+        transform: translateX(-307200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-162 {
+        transform: translateX(-309120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-163 {
+        transform: translateX(-311040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-164 {
+        transform: translateX(-312960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-165 {
+        transform: translateX(-314880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-166 {
+        transform: translateX(-316800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-167 {
+        transform: translateX(-318720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-168 {
+        transform: translateX(-320640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-169 {
+        transform: translateX(-322560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-170 {
+        transform: translateX(-324480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-171 {
+        transform: translateX(-326400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-172 {
+        transform: translateX(-328320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-173 {
+        transform: translateX(-330240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-174 {
+        transform: translateX(-332160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-175 {
+        transform: translateX(-334080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-176 {
+        transform: translateX(-336000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-177 {
+        transform: translateX(-337920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-178 {
+        transform: translateX(-339840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-179 {
+        transform: translateX(-341760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-180 {
+        transform: translateX(-343680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-181 {
+        transform: translateX(-345600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-182 {
+        transform: translateX(-347520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-183 {
+        transform: translateX(-349440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-184 {
+        transform: translateX(-351360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-185 {
+        transform: translateX(-353280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-186 {
+        transform: translateX(-355200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-187 {
+        transform: translateX(-357120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-188 {
+        transform: translateX(-359040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-189 {
+        transform: translateX(-360960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-190 {
+        transform: translateX(-362880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-191 {
+        transform: translateX(-364800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-192 {
+        transform: translateX(-366720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-193 {
+        transform: translateX(-368640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-194 {
+        transform: translateX(-370560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-195 {
+        transform: translateX(-372480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-196 {
+        transform: translateX(-374400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-197 {
+        transform: translateX(-376320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-198 {
+        transform: translateX(-378240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-199 {
+        transform: translateX(-380160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-200 {
+        transform: translateX(-382080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-201 {
+        transform: translateX(-384000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-202 {
+        transform: translateX(-385920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-203 {
+        transform: translateX(-387840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-204 {
+        transform: translateX(-389760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-205 {
+        transform: translateX(-391680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-206 {
+        transform: translateX(-393600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-207 {
+        transform: translateX(-395520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-208 {
+        transform: translateX(-397440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-209 {
+        transform: translateX(-399360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-210 {
+        transform: translateX(-401280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-211 {
+        transform: translateX(-403200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-212 {
+        transform: translateX(-405120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-213 {
+        transform: translateX(-407040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-214 {
+        transform: translateX(-408960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-215 {
+        transform: translateX(-410880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-216 {
+        transform: translateX(-412800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-217 {
+        transform: translateX(-414720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-218 {
+        transform: translateX(-416640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-219 {
+        transform: translateX(-418560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-220 {
+        transform: translateX(-420480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-221 {
+        transform: translateX(-422400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-222 {
+        transform: translateX(-424320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-223 {
+        transform: translateX(-426240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-224 {
+        transform: translateX(-428160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-225 {
+        transform: translateX(-430080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-226 {
+        transform: translateX(-432000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-227 {
+        transform: translateX(-433920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-228 {
+        transform: translateX(-435840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-229 {
+        transform: translateX(-437760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-230 {
+        transform: translateX(-439680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-231 {
+        transform: translateX(-441600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-232 {
+        transform: translateX(-443520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-233 {
+        transform: translateX(-445440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-234 {
+        transform: translateX(-447360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-235 {
+        transform: translateX(-449280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-236 {
+        transform: translateX(-451200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-237 {
+        transform: translateX(-453120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-238 {
+        transform: translateX(-455040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-239 {
+        transform: translateX(-456960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-240 {
+        transform: translateX(-458880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-241 {
+        transform: translateX(-460800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-242 {
+        transform: translateX(-462720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-243 {
+        transform: translateX(-464640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-244 {
+        transform: translateX(-466560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-245 {
+        transform: translateX(-468480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-246 {
+        transform: translateX(-470400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-247 {
+        transform: translateX(-472320px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-248 {
+        transform: translateX(-474240px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-249 {
+        transform: translateX(-476160px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-250 {
+        transform: translateX(-478080px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-251 {
+        transform: translateX(-480000px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-252 {
+        transform: translateX(-481920px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-253 {
+        transform: translateX(-483840px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-254 {
+        transform: translateX(-485760px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-255 {
+        transform: translateX(-487680px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-256 {
+        transform: translateX(-489600px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-257 {
+        transform: translateX(-491520px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-258 {
+        transform: translateX(-493440px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-259 {
+        transform: translateX(-495360px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-260 {
+        transform: translateX(-497280px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-261 {
+        transform: translateX(-499200px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-262 {
+        transform: translateX(-501120px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-263 {
+        transform: translateX(-503040px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-264 {
+        transform: translateX(-504960px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-265 {
+        transform: translateX(-506880px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-266 {
+        transform: translateX(-508800px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-267 {
+        transform: translateX(-510720px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-268 {
+        transform: translateX(-512640px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-269 {
+        transform: translateX(-514560px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-270 {
+        transform: translateX(-516480px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-271 {
+        transform: translateX(-518400px); }
+      #story #story-animation #animation-blue-whale .container-images.anim-272 {
+        transform: translateX(-520320px); }
+    #story #story-animation #animation-sperm-whale .container-images {
+      width: 537600px; }
+      #story #story-animation #animation-sperm-whale .container-images.anim-1 {
+        transform: translateX(0px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-2 {
+        transform: translateX(-1920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-3 {
+        transform: translateX(-3840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-4 {
+        transform: translateX(-5760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-5 {
+        transform: translateX(-7680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-6 {
+        transform: translateX(-9600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-7 {
+        transform: translateX(-11520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-8 {
+        transform: translateX(-13440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-9 {
+        transform: translateX(-15360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-10 {
+        transform: translateX(-17280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-11 {
+        transform: translateX(-19200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-12 {
+        transform: translateX(-21120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-13 {
+        transform: translateX(-23040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-14 {
+        transform: translateX(-24960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-15 {
+        transform: translateX(-26880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-16 {
+        transform: translateX(-28800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-17 {
+        transform: translateX(-30720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-18 {
+        transform: translateX(-32640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-19 {
+        transform: translateX(-34560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-20 {
+        transform: translateX(-36480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-21 {
+        transform: translateX(-38400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-22 {
+        transform: translateX(-40320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-23 {
+        transform: translateX(-42240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-24 {
+        transform: translateX(-44160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-25 {
+        transform: translateX(-46080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-26 {
+        transform: translateX(-48000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-27 {
+        transform: translateX(-49920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-28 {
+        transform: translateX(-51840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-29 {
+        transform: translateX(-53760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-30 {
+        transform: translateX(-55680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-31 {
+        transform: translateX(-57600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-32 {
+        transform: translateX(-59520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-33 {
+        transform: translateX(-61440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-34 {
+        transform: translateX(-63360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-35 {
+        transform: translateX(-65280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-36 {
+        transform: translateX(-67200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-37 {
+        transform: translateX(-69120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-38 {
+        transform: translateX(-71040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-39 {
+        transform: translateX(-72960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-40 {
+        transform: translateX(-74880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-41 {
+        transform: translateX(-76800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-42 {
+        transform: translateX(-78720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-43 {
+        transform: translateX(-80640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-44 {
+        transform: translateX(-82560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-45 {
+        transform: translateX(-84480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-46 {
+        transform: translateX(-86400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-47 {
+        transform: translateX(-88320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-48 {
+        transform: translateX(-90240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-49 {
+        transform: translateX(-92160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-50 {
+        transform: translateX(-94080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-51 {
+        transform: translateX(-96000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-52 {
+        transform: translateX(-97920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-53 {
+        transform: translateX(-99840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-54 {
+        transform: translateX(-101760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-55 {
+        transform: translateX(-103680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-56 {
+        transform: translateX(-105600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-57 {
+        transform: translateX(-107520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-58 {
+        transform: translateX(-109440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-59 {
+        transform: translateX(-111360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-60 {
+        transform: translateX(-113280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-61 {
+        transform: translateX(-115200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-62 {
+        transform: translateX(-117120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-63 {
+        transform: translateX(-119040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-64 {
+        transform: translateX(-120960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-65 {
+        transform: translateX(-122880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-66 {
+        transform: translateX(-124800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-67 {
+        transform: translateX(-126720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-68 {
+        transform: translateX(-128640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-69 {
+        transform: translateX(-130560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-70 {
+        transform: translateX(-132480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-71 {
+        transform: translateX(-134400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-72 {
+        transform: translateX(-136320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-73 {
+        transform: translateX(-138240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-74 {
+        transform: translateX(-140160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-75 {
+        transform: translateX(-142080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-76 {
+        transform: translateX(-144000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-77 {
+        transform: translateX(-145920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-78 {
+        transform: translateX(-147840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-79 {
+        transform: translateX(-149760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-80 {
+        transform: translateX(-151680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-81 {
+        transform: translateX(-153600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-82 {
+        transform: translateX(-155520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-83 {
+        transform: translateX(-157440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-84 {
+        transform: translateX(-159360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-85 {
+        transform: translateX(-161280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-86 {
+        transform: translateX(-163200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-87 {
+        transform: translateX(-165120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-88 {
+        transform: translateX(-167040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-89 {
+        transform: translateX(-168960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-90 {
+        transform: translateX(-170880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-91 {
+        transform: translateX(-172800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-92 {
+        transform: translateX(-174720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-93 {
+        transform: translateX(-176640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-94 {
+        transform: translateX(-178560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-95 {
+        transform: translateX(-180480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-96 {
+        transform: translateX(-182400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-97 {
+        transform: translateX(-184320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-98 {
+        transform: translateX(-186240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-99 {
+        transform: translateX(-188160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-100 {
+        transform: translateX(-190080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-101 {
+        transform: translateX(-192000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-102 {
+        transform: translateX(-193920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-103 {
+        transform: translateX(-195840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-104 {
+        transform: translateX(-197760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-105 {
+        transform: translateX(-199680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-106 {
+        transform: translateX(-201600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-107 {
+        transform: translateX(-203520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-108 {
+        transform: translateX(-205440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-109 {
+        transform: translateX(-207360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-110 {
+        transform: translateX(-209280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-111 {
+        transform: translateX(-211200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-112 {
+        transform: translateX(-213120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-113 {
+        transform: translateX(-215040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-114 {
+        transform: translateX(-216960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-115 {
+        transform: translateX(-218880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-116 {
+        transform: translateX(-220800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-117 {
+        transform: translateX(-222720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-118 {
+        transform: translateX(-224640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-119 {
+        transform: translateX(-226560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-120 {
+        transform: translateX(-228480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-121 {
+        transform: translateX(-230400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-122 {
+        transform: translateX(-232320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-123 {
+        transform: translateX(-234240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-124 {
+        transform: translateX(-236160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-125 {
+        transform: translateX(-238080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-126 {
+        transform: translateX(-240000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-127 {
+        transform: translateX(-241920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-128 {
+        transform: translateX(-243840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-129 {
+        transform: translateX(-245760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-130 {
+        transform: translateX(-247680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-131 {
+        transform: translateX(-249600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-132 {
+        transform: translateX(-251520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-133 {
+        transform: translateX(-253440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-134 {
+        transform: translateX(-255360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-135 {
+        transform: translateX(-257280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-136 {
+        transform: translateX(-259200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-137 {
+        transform: translateX(-261120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-138 {
+        transform: translateX(-263040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-139 {
+        transform: translateX(-264960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-140 {
+        transform: translateX(-266880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-141 {
+        transform: translateX(-268800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-142 {
+        transform: translateX(-270720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-143 {
+        transform: translateX(-272640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-144 {
+        transform: translateX(-274560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-145 {
+        transform: translateX(-276480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-146 {
+        transform: translateX(-278400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-147 {
+        transform: translateX(-280320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-148 {
+        transform: translateX(-282240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-149 {
+        transform: translateX(-284160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-150 {
+        transform: translateX(-286080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-151 {
+        transform: translateX(-288000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-152 {
+        transform: translateX(-289920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-153 {
+        transform: translateX(-291840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-154 {
+        transform: translateX(-293760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-155 {
+        transform: translateX(-295680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-156 {
+        transform: translateX(-297600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-157 {
+        transform: translateX(-299520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-158 {
+        transform: translateX(-301440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-159 {
+        transform: translateX(-303360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-160 {
+        transform: translateX(-305280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-161 {
+        transform: translateX(-307200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-162 {
+        transform: translateX(-309120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-163 {
+        transform: translateX(-311040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-164 {
+        transform: translateX(-312960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-165 {
+        transform: translateX(-314880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-166 {
+        transform: translateX(-316800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-167 {
+        transform: translateX(-318720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-168 {
+        transform: translateX(-320640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-169 {
+        transform: translateX(-322560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-170 {
+        transform: translateX(-324480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-171 {
+        transform: translateX(-326400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-172 {
+        transform: translateX(-328320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-173 {
+        transform: translateX(-330240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-174 {
+        transform: translateX(-332160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-175 {
+        transform: translateX(-334080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-176 {
+        transform: translateX(-336000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-177 {
+        transform: translateX(-337920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-178 {
+        transform: translateX(-339840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-179 {
+        transform: translateX(-341760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-180 {
+        transform: translateX(-343680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-181 {
+        transform: translateX(-345600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-182 {
+        transform: translateX(-347520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-183 {
+        transform: translateX(-349440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-184 {
+        transform: translateX(-351360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-185 {
+        transform: translateX(-353280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-186 {
+        transform: translateX(-355200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-187 {
+        transform: translateX(-357120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-188 {
+        transform: translateX(-359040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-189 {
+        transform: translateX(-360960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-190 {
+        transform: translateX(-362880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-191 {
+        transform: translateX(-364800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-192 {
+        transform: translateX(-366720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-193 {
+        transform: translateX(-368640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-194 {
+        transform: translateX(-370560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-195 {
+        transform: translateX(-372480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-196 {
+        transform: translateX(-374400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-197 {
+        transform: translateX(-376320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-198 {
+        transform: translateX(-378240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-199 {
+        transform: translateX(-380160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-200 {
+        transform: translateX(-382080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-201 {
+        transform: translateX(-384000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-202 {
+        transform: translateX(-385920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-203 {
+        transform: translateX(-387840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-204 {
+        transform: translateX(-389760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-205 {
+        transform: translateX(-391680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-206 {
+        transform: translateX(-393600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-207 {
+        transform: translateX(-395520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-208 {
+        transform: translateX(-397440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-209 {
+        transform: translateX(-399360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-210 {
+        transform: translateX(-401280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-211 {
+        transform: translateX(-403200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-212 {
+        transform: translateX(-405120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-213 {
+        transform: translateX(-407040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-214 {
+        transform: translateX(-408960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-215 {
+        transform: translateX(-410880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-216 {
+        transform: translateX(-412800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-217 {
+        transform: translateX(-414720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-218 {
+        transform: translateX(-416640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-219 {
+        transform: translateX(-418560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-220 {
+        transform: translateX(-420480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-221 {
+        transform: translateX(-422400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-222 {
+        transform: translateX(-424320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-223 {
+        transform: translateX(-426240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-224 {
+        transform: translateX(-428160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-225 {
+        transform: translateX(-430080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-226 {
+        transform: translateX(-432000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-227 {
+        transform: translateX(-433920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-228 {
+        transform: translateX(-435840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-229 {
+        transform: translateX(-437760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-230 {
+        transform: translateX(-439680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-231 {
+        transform: translateX(-441600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-232 {
+        transform: translateX(-443520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-233 {
+        transform: translateX(-445440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-234 {
+        transform: translateX(-447360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-235 {
+        transform: translateX(-449280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-236 {
+        transform: translateX(-451200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-237 {
+        transform: translateX(-453120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-238 {
+        transform: translateX(-455040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-239 {
+        transform: translateX(-456960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-240 {
+        transform: translateX(-458880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-241 {
+        transform: translateX(-460800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-242 {
+        transform: translateX(-462720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-243 {
+        transform: translateX(-464640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-244 {
+        transform: translateX(-466560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-245 {
+        transform: translateX(-468480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-246 {
+        transform: translateX(-470400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-247 {
+        transform: translateX(-472320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-248 {
+        transform: translateX(-474240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-249 {
+        transform: translateX(-476160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-250 {
+        transform: translateX(-478080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-251 {
+        transform: translateX(-480000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-252 {
+        transform: translateX(-481920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-253 {
+        transform: translateX(-483840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-254 {
+        transform: translateX(-485760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-255 {
+        transform: translateX(-487680px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-256 {
+        transform: translateX(-489600px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-257 {
+        transform: translateX(-491520px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-258 {
+        transform: translateX(-493440px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-259 {
+        transform: translateX(-495360px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-260 {
+        transform: translateX(-497280px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-261 {
+        transform: translateX(-499200px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-262 {
+        transform: translateX(-501120px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-263 {
+        transform: translateX(-503040px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-264 {
+        transform: translateX(-504960px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-265 {
+        transform: translateX(-506880px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-266 {
+        transform: translateX(-508800px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-267 {
+        transform: translateX(-510720px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-268 {
+        transform: translateX(-512640px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-269 {
+        transform: translateX(-514560px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-270 {
+        transform: translateX(-516480px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-271 {
+        transform: translateX(-518400px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-272 {
+        transform: translateX(-520320px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-273 {
+        transform: translateX(-522240px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-274 {
+        transform: translateX(-524160px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-275 {
+        transform: translateX(-526080px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-276 {
+        transform: translateX(-528000px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-277 {
+        transform: translateX(-529920px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-278 {
+        transform: translateX(-531840px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-279 {
+        transform: translateX(-533760px); }
+      #story #story-animation #animation-sperm-whale .container-images.anim-280 {
+        transform: translateX(-535680px); }
+    #story #story-animation #animation-fin-whale .container-images {
+      width: 514560px; }
+      #story #story-animation #animation-fin-whale .container-images.anim-1 {
+        transform: translateX(0px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-2 {
+        transform: translateX(-1920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-3 {
+        transform: translateX(-3840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-4 {
+        transform: translateX(-5760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-5 {
+        transform: translateX(-7680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-6 {
+        transform: translateX(-9600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-7 {
+        transform: translateX(-11520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-8 {
+        transform: translateX(-13440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-9 {
+        transform: translateX(-15360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-10 {
+        transform: translateX(-17280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-11 {
+        transform: translateX(-19200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-12 {
+        transform: translateX(-21120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-13 {
+        transform: translateX(-23040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-14 {
+        transform: translateX(-24960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-15 {
+        transform: translateX(-26880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-16 {
+        transform: translateX(-28800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-17 {
+        transform: translateX(-30720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-18 {
+        transform: translateX(-32640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-19 {
+        transform: translateX(-34560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-20 {
+        transform: translateX(-36480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-21 {
+        transform: translateX(-38400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-22 {
+        transform: translateX(-40320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-23 {
+        transform: translateX(-42240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-24 {
+        transform: translateX(-44160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-25 {
+        transform: translateX(-46080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-26 {
+        transform: translateX(-48000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-27 {
+        transform: translateX(-49920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-28 {
+        transform: translateX(-51840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-29 {
+        transform: translateX(-53760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-30 {
+        transform: translateX(-55680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-31 {
+        transform: translateX(-57600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-32 {
+        transform: translateX(-59520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-33 {
+        transform: translateX(-61440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-34 {
+        transform: translateX(-63360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-35 {
+        transform: translateX(-65280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-36 {
+        transform: translateX(-67200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-37 {
+        transform: translateX(-69120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-38 {
+        transform: translateX(-71040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-39 {
+        transform: translateX(-72960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-40 {
+        transform: translateX(-74880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-41 {
+        transform: translateX(-76800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-42 {
+        transform: translateX(-78720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-43 {
+        transform: translateX(-80640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-44 {
+        transform: translateX(-82560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-45 {
+        transform: translateX(-84480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-46 {
+        transform: translateX(-86400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-47 {
+        transform: translateX(-88320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-48 {
+        transform: translateX(-90240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-49 {
+        transform: translateX(-92160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-50 {
+        transform: translateX(-94080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-51 {
+        transform: translateX(-96000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-52 {
+        transform: translateX(-97920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-53 {
+        transform: translateX(-99840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-54 {
+        transform: translateX(-101760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-55 {
+        transform: translateX(-103680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-56 {
+        transform: translateX(-105600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-57 {
+        transform: translateX(-107520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-58 {
+        transform: translateX(-109440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-59 {
+        transform: translateX(-111360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-60 {
+        transform: translateX(-113280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-61 {
+        transform: translateX(-115200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-62 {
+        transform: translateX(-117120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-63 {
+        transform: translateX(-119040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-64 {
+        transform: translateX(-120960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-65 {
+        transform: translateX(-122880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-66 {
+        transform: translateX(-124800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-67 {
+        transform: translateX(-126720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-68 {
+        transform: translateX(-128640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-69 {
+        transform: translateX(-130560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-70 {
+        transform: translateX(-132480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-71 {
+        transform: translateX(-134400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-72 {
+        transform: translateX(-136320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-73 {
+        transform: translateX(-138240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-74 {
+        transform: translateX(-140160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-75 {
+        transform: translateX(-142080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-76 {
+        transform: translateX(-144000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-77 {
+        transform: translateX(-145920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-78 {
+        transform: translateX(-147840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-79 {
+        transform: translateX(-149760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-80 {
+        transform: translateX(-151680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-81 {
+        transform: translateX(-153600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-82 {
+        transform: translateX(-155520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-83 {
+        transform: translateX(-157440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-84 {
+        transform: translateX(-159360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-85 {
+        transform: translateX(-161280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-86 {
+        transform: translateX(-163200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-87 {
+        transform: translateX(-165120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-88 {
+        transform: translateX(-167040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-89 {
+        transform: translateX(-168960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-90 {
+        transform: translateX(-170880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-91 {
+        transform: translateX(-172800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-92 {
+        transform: translateX(-174720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-93 {
+        transform: translateX(-176640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-94 {
+        transform: translateX(-178560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-95 {
+        transform: translateX(-180480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-96 {
+        transform: translateX(-182400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-97 {
+        transform: translateX(-184320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-98 {
+        transform: translateX(-186240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-99 {
+        transform: translateX(-188160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-100 {
+        transform: translateX(-190080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-101 {
+        transform: translateX(-192000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-102 {
+        transform: translateX(-193920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-103 {
+        transform: translateX(-195840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-104 {
+        transform: translateX(-197760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-105 {
+        transform: translateX(-199680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-106 {
+        transform: translateX(-201600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-107 {
+        transform: translateX(-203520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-108 {
+        transform: translateX(-205440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-109 {
+        transform: translateX(-207360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-110 {
+        transform: translateX(-209280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-111 {
+        transform: translateX(-211200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-112 {
+        transform: translateX(-213120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-113 {
+        transform: translateX(-215040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-114 {
+        transform: translateX(-216960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-115 {
+        transform: translateX(-218880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-116 {
+        transform: translateX(-220800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-117 {
+        transform: translateX(-222720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-118 {
+        transform: translateX(-224640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-119 {
+        transform: translateX(-226560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-120 {
+        transform: translateX(-228480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-121 {
+        transform: translateX(-230400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-122 {
+        transform: translateX(-232320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-123 {
+        transform: translateX(-234240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-124 {
+        transform: translateX(-236160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-125 {
+        transform: translateX(-238080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-126 {
+        transform: translateX(-240000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-127 {
+        transform: translateX(-241920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-128 {
+        transform: translateX(-243840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-129 {
+        transform: translateX(-245760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-130 {
+        transform: translateX(-247680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-131 {
+        transform: translateX(-249600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-132 {
+        transform: translateX(-251520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-133 {
+        transform: translateX(-253440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-134 {
+        transform: translateX(-255360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-135 {
+        transform: translateX(-257280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-136 {
+        transform: translateX(-259200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-137 {
+        transform: translateX(-261120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-138 {
+        transform: translateX(-263040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-139 {
+        transform: translateX(-264960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-140 {
+        transform: translateX(-266880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-141 {
+        transform: translateX(-268800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-142 {
+        transform: translateX(-270720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-143 {
+        transform: translateX(-272640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-144 {
+        transform: translateX(-274560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-145 {
+        transform: translateX(-276480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-146 {
+        transform: translateX(-278400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-147 {
+        transform: translateX(-280320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-148 {
+        transform: translateX(-282240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-149 {
+        transform: translateX(-284160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-150 {
+        transform: translateX(-286080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-151 {
+        transform: translateX(-288000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-152 {
+        transform: translateX(-289920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-153 {
+        transform: translateX(-291840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-154 {
+        transform: translateX(-293760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-155 {
+        transform: translateX(-295680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-156 {
+        transform: translateX(-297600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-157 {
+        transform: translateX(-299520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-158 {
+        transform: translateX(-301440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-159 {
+        transform: translateX(-303360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-160 {
+        transform: translateX(-305280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-161 {
+        transform: translateX(-307200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-162 {
+        transform: translateX(-309120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-163 {
+        transform: translateX(-311040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-164 {
+        transform: translateX(-312960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-165 {
+        transform: translateX(-314880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-166 {
+        transform: translateX(-316800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-167 {
+        transform: translateX(-318720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-168 {
+        transform: translateX(-320640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-169 {
+        transform: translateX(-322560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-170 {
+        transform: translateX(-324480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-171 {
+        transform: translateX(-326400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-172 {
+        transform: translateX(-328320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-173 {
+        transform: translateX(-330240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-174 {
+        transform: translateX(-332160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-175 {
+        transform: translateX(-334080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-176 {
+        transform: translateX(-336000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-177 {
+        transform: translateX(-337920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-178 {
+        transform: translateX(-339840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-179 {
+        transform: translateX(-341760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-180 {
+        transform: translateX(-343680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-181 {
+        transform: translateX(-345600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-182 {
+        transform: translateX(-347520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-183 {
+        transform: translateX(-349440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-184 {
+        transform: translateX(-351360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-185 {
+        transform: translateX(-353280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-186 {
+        transform: translateX(-355200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-187 {
+        transform: translateX(-357120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-188 {
+        transform: translateX(-359040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-189 {
+        transform: translateX(-360960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-190 {
+        transform: translateX(-362880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-191 {
+        transform: translateX(-364800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-192 {
+        transform: translateX(-366720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-193 {
+        transform: translateX(-368640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-194 {
+        transform: translateX(-370560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-195 {
+        transform: translateX(-372480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-196 {
+        transform: translateX(-374400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-197 {
+        transform: translateX(-376320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-198 {
+        transform: translateX(-378240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-199 {
+        transform: translateX(-380160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-200 {
+        transform: translateX(-382080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-201 {
+        transform: translateX(-384000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-202 {
+        transform: translateX(-385920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-203 {
+        transform: translateX(-387840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-204 {
+        transform: translateX(-389760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-205 {
+        transform: translateX(-391680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-206 {
+        transform: translateX(-393600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-207 {
+        transform: translateX(-395520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-208 {
+        transform: translateX(-397440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-209 {
+        transform: translateX(-399360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-210 {
+        transform: translateX(-401280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-211 {
+        transform: translateX(-403200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-212 {
+        transform: translateX(-405120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-213 {
+        transform: translateX(-407040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-214 {
+        transform: translateX(-408960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-215 {
+        transform: translateX(-410880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-216 {
+        transform: translateX(-412800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-217 {
+        transform: translateX(-414720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-218 {
+        transform: translateX(-416640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-219 {
+        transform: translateX(-418560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-220 {
+        transform: translateX(-420480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-221 {
+        transform: translateX(-422400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-222 {
+        transform: translateX(-424320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-223 {
+        transform: translateX(-426240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-224 {
+        transform: translateX(-428160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-225 {
+        transform: translateX(-430080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-226 {
+        transform: translateX(-432000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-227 {
+        transform: translateX(-433920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-228 {
+        transform: translateX(-435840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-229 {
+        transform: translateX(-437760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-230 {
+        transform: translateX(-439680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-231 {
+        transform: translateX(-441600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-232 {
+        transform: translateX(-443520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-233 {
+        transform: translateX(-445440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-234 {
+        transform: translateX(-447360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-235 {
+        transform: translateX(-449280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-236 {
+        transform: translateX(-451200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-237 {
+        transform: translateX(-453120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-238 {
+        transform: translateX(-455040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-239 {
+        transform: translateX(-456960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-240 {
+        transform: translateX(-458880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-241 {
+        transform: translateX(-460800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-242 {
+        transform: translateX(-462720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-243 {
+        transform: translateX(-464640px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-244 {
+        transform: translateX(-466560px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-245 {
+        transform: translateX(-468480px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-246 {
+        transform: translateX(-470400px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-247 {
+        transform: translateX(-472320px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-248 {
+        transform: translateX(-474240px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-249 {
+        transform: translateX(-476160px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-250 {
+        transform: translateX(-478080px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-251 {
+        transform: translateX(-480000px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-252 {
+        transform: translateX(-481920px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-253 {
+        transform: translateX(-483840px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-254 {
+        transform: translateX(-485760px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-255 {
+        transform: translateX(-487680px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-256 {
+        transform: translateX(-489600px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-257 {
+        transform: translateX(-491520px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-258 {
+        transform: translateX(-493440px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-259 {
+        transform: translateX(-495360px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-260 {
+        transform: translateX(-497280px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-261 {
+        transform: translateX(-499200px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-262 {
+        transform: translateX(-501120px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-263 {
+        transform: translateX(-503040px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-264 {
+        transform: translateX(-504960px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-265 {
+        transform: translateX(-506880px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-266 {
+        transform: translateX(-508800px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-267 {
+        transform: translateX(-510720px); }
+      #story #story-animation #animation-fin-whale .container-images.anim-268 {
+        transform: translateX(-512640px); }

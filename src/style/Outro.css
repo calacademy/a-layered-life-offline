@@ -1,0 +1,49 @@
+#outro {
+  width: 100%;
+  height: 100%; }
+  #outro #outro-animation-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden; }
+    #outro #outro-animation-container div .outro-container-images {
+      position: relative;
+      height: 1080px;
+      float: left;
+      left: 0px; }
+      #outro #outro-animation-container div .outro-container-images img {
+        width: 1920px;
+        height: 1080px;
+        border: none;
+        display: block !important;
+        float: left; }
+    #outro #outro-animation-container #animation-blue-whale .outro-container-images {
+      width: 19200px;
+      animation: play-outro-animation-blue-whale 0.5s steps(9) forwards; }
+    #outro #outro-animation-container #animation-sperm-whale .outro-container-images {
+      width: 19200px;
+      animation: play-outro-animation-sperm-whale 0.5s steps(9) forwards; }
+    #outro #outro-animation-container #animation-fin-whale .outro-container-images {
+      width: 17280px;
+      animation: play-outro-animation-fin-whale 0.5s steps(8) forwards; }
+
+@keyframes play-outro-animation-blue-whale {
+  from {
+    left: 0; }
+  to {
+    left: -17280px; } }
+
+@keyframes play-outro-animation-sperm-whale {
+  from {
+    left: 0; }
+  to {
+    left: -17280px; } }
+
+@keyframes play-outro-animation-fin-whale {
+  from {
+    left: 0; }
+  to {
+    left: -15360px; } }

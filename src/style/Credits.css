@@ -1,0 +1,56 @@
+#credits {
+  color: #fff; }
+  #credits button {
+    position: absolute;
+    z-index: 1;
+    top: 77px;
+    right: 50px;
+    width: 62px;
+    height: 62px;
+    background-image: url("../img/close-btn-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+    #credits button:active {
+      opacity: 0.7; }
+  #credits #credits-scroll-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 1080px; }
+    #credits #credits-scroll-container h1 {
+      margin-top: 77px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: 'W-Narrow-Book';
+      line-height: 1;
+      font-size: 40px;
+      letter-spacing: 1px; }
+    #credits #credits-scroll-container ul {
+      columns: 2 730px;
+      column-gap: 120px;
+      margin-left: 205px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 1710px; }
+      #credits #credits-scroll-container ul li {
+        list-style: none;
+        display: inline-block;
+        width: 730px; }
+        #credits #credits-scroll-container ul li h2 {
+          font-family: 'W-Narrow-Book';
+          font-size: 30px;
+          line-height: 1;
+          letter-spacing: 2px;
+          padding-bottom: 12px; }
+        #credits #credits-scroll-container ul li p {
+          font-family: 'W-Book';
+          font-size: 22px;
+          line-height: 25px;
+          padding-bottom: 21px; }
+    #credits #credits-scroll-container #credits-mask {
+      position: absolute;
+      z-index: 1;
+      width: 1920px;
+      height: 200px;
+      bottom: 0px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%) left bottom transparent no-repeat;
+      background-size: 100% 200px; }

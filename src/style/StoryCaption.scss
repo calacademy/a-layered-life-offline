@@ -1,0 +1,120 @@
+@import "./_vars.scss";
+
+#story-caption {
+
+  width: 1920px;
+  height: 930px; // leave 150 for anim slider
+
+  div {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.4s $easing;
+    &.reveal {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // blue whale
+
+  #story-0-caption-0 {
+    @include caption-box;
+    position: absolute;
+    top: 560px;
+    left: 1326px;
+  }
+  #story-0-caption-1 {
+    @include caption-box;
+    position: absolute;
+    top: 374px;
+    left: 1510px;
+  }
+  #story-0-caption-2 {
+    @include caption-box;
+    position: absolute;
+    top: 452px;
+    left: 1254px;
+  }
+  #story-0-caption-3 {
+    @include caption-list;
+    position: absolute;
+    top: 689px;
+    left: 1524px;
+  }
+  #story-0-caption-4 {
+    @include caption-list;
+    position: absolute;
+    top: 737px;
+    left: 1524px;
+  }
+
+  // sperm whale
+
+  #story-1-caption-0 {
+    @include caption-box;
+    position: absolute;
+    bottom: 398px;
+    left: 751px;
+  }
+
+  // fin whale
+
+  #story-2-caption-0 {
+    @include caption-arrow;
+    position: absolute;
+    top: 276px;
+    left: 1210px;
+  }
+
+  #story-2-caption-1 {
+    @include caption-arrow;
+    position: absolute;
+    bottom: 546px;
+    left: 1420px;
+    width: 100px;
+  }
+
+  #story-2-caption-2 {
+    @include caption-arrow;
+    position: absolute;
+    top: 344px;
+    left: 1260px;
+  }
+
+  #story-2-caption-3 {
+    @include caption-list;
+    position: absolute;
+    top: 207px;
+    left: 1486px;
+    width: 270px;
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  #story-2-caption-4 {
+    @include caption-list;
+    position: absolute;
+    top: 280px;
+    left: 1486px;
+    width: 270px;
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  #story-2-caption-5 {
+    @include caption-list;
+    position: absolute;
+    top: 355px;
+    left: 1486px;
+    width: 270px;
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+}

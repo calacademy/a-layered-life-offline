@@ -1,0 +1,141 @@
+@import "./_vars.scss";
+
+#menu {
+
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-menu.png');
+
+  .menu-blurb-container {
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    left: 0;
+    width: 380px;
+    height: 1035px;
+    margin: 120px 0 0 60px;
+    opacity: 1;
+    transition: opacity 0.4s $easing;
+    &.mask {
+      opacity: 0;
+    }
+
+    h1 {
+      font-family: 'W-Narrow-Book', 'SourceHanSansCN-Normal';
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: normal;
+      color: #fff;
+    }
+    p {
+      font-family: 'W-Book', 'SourceHanSansCN-Normal';
+      margin-top: 20px;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  .menu-btn-container {
+
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    right: 0;
+
+    button {
+      background-image: url('../img/btn-next-white.svg');
+      background-size: 42px;
+      background-repeat: no-repeat;
+      background-position: right 50px center;
+      vertical-align: middle;
+      width: 1416px;
+      height: 343px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      float: right;
+      visibility: visible;
+      opacity: 1;
+      &.mask {
+        transition: visibility 0.5s, opacity 0.4s $easing;
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:active {
+        opacity: 0.7;
+      }
+
+      div {
+        width: 180px;
+        color: #fff;
+        font-family: 'W-Narrow-Semibold', 'SourceHanSansCN-Bold';
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: normal;
+        text-align: left;
+        position: relative;
+        margin-left: 1090px;
+        top: 60%;
+      }
+    }
+  }
+
+  .menu-animation-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+
+    .menu-animation-images {
+      position: relative;
+      height: 360px;
+      overflow: hidden;
+      float: left;
+      left: 0px;
+      width: ($menuAnimationFrames * 1920px);
+      animation: loop-menu-welcome 2.5s steps($menuAnimationFrames) infinite;
+
+      //visibility: visible;
+      //opacity: 1;
+      //transition: visibility 0.5s, opacity 0.4s $easing;
+      &.mask {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      img {
+        width: 1920px;
+        height: 1080px;
+        border: none;
+        display: block !important;
+        float: left;
+      }
+
+    }
+
+    #menu-animation-images-0 {
+
+    }
+    #menu-animation-images-1 {
+      img {
+        margin-top: -360px;
+      }
+    }
+    #menu-animation-images-2 {
+      img {
+        margin-top: -720px;
+      }
+    }
+
+  }
+
+}
+
+@keyframes loop-menu-welcome {
+  from { left: 0; }
+  to   { left: ($menuAnimationFrames * -1920px); }
+}

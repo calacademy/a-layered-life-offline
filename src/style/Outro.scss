@@ -1,0 +1,66 @@
+@import "./_vars.scss";
+
+#outro {
+
+  width: 100%;
+  height: 100%;
+
+  #outro-animation-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+
+    div {
+      .outro-container-images {
+        position: relative;
+        height: 1080px;
+        float: left;
+        left: 0px;
+        img {
+          width: 1920px;
+          height: 1080px;
+          border: none;
+          display: block !important;
+          float: left;
+        }
+      }
+    }
+
+    #animation-blue-whale {
+      .outro-container-images {
+        width: ($outroFramesBlueWhale * 1920px);
+        animation: play-outro-animation-blue-whale 0.5s steps($outroFramesBlueWhale - 1) forwards;
+      }
+    }
+    #animation-sperm-whale {
+      .outro-container-images {
+        width: ($outroFramesSpermWhale * 1920px);
+        animation: play-outro-animation-sperm-whale 0.5s steps($outroFramesSpermWhale - 1) forwards;
+      }
+    }
+    #animation-fin-whale {
+      .outro-container-images {
+        width: ($outroFramesFinWhale * 1920px);
+        animation: play-outro-animation-fin-whale 0.5s steps($outroFramesFinWhale - 1) forwards;
+      }
+    }
+
+  }
+}
+
+@keyframes play-outro-animation-blue-whale {
+  from { left: 0; }
+  to   { left: (($outroFramesBlueWhale - 1) * -1920px); }
+}
+@keyframes play-outro-animation-sperm-whale {
+  from { left: 0; }
+  to   { left: (($outroFramesSpermWhale - 1) * -1920px); }
+}
+@keyframes play-outro-animation-fin-whale {
+  from { left: 0; }
+  to   { left: (($outroFramesFinWhale - 1) * -1920px); }
+}

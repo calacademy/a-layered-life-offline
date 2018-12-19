@@ -1,0 +1,104 @@
+@import "./_vars.scss";
+
+#story-text {
+
+  width: 1920px;
+  height: 930px; // leave 150 for anim slider
+
+  div {
+    width: 522px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.4s $easing;
+    &.reveal {
+      opacity: 1;
+      visibility: visible;
+    }
+    span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff;
+      opacity: .2;
+      &.highlight {
+        opacity: 1;
+      }
+    }
+  }
+
+  // abs bottom positions below account for 150 px anim slider offset
+
+  // blue whale
+
+  #story-0-text-0 {
+    position: absolute;
+    bottom: 60px;
+    left: 684px;
+  }
+  #story-0-text-1 {
+    position: absolute;
+    bottom: 60px;
+    left: 684px;
+  }
+  #story-0-text-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 1130px;
+    background-color: $blueDark;
+  }
+  #story-0-text-3 {
+    position: absolute;
+    bottom: 60px;
+    left: 200px;
+  }
+
+  // sperm whale
+
+  #story-1-text-0 {
+    position: absolute;
+    bottom: 60px;
+    left: 684px;
+  }
+  #story-1-text-1 {
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+    background-color: $blueDark;
+  }
+  #story-1-text-2 {
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+  }
+  #story-1-text-3 {
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+  }
+
+  // fin whale
+
+  #story-2-text-0 {
+    position: absolute;
+    bottom: 60px;
+    left: 684px;
+  }
+  #story-2-text-1 {
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+  }
+  #story-2-text-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 200px;
+  }
+  #story-2-text-3 {
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+    background-color: $blueDark;
+  }
+
+}

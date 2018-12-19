@@ -1,0 +1,174 @@
+#story-caption {
+  width: 1920px;
+  height: 930px; }
+  #story-caption div {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    #story-caption div.reveal {
+      opacity: 1;
+      visibility: visible; }
+  #story-caption #story-0-caption-0 {
+    width: 242px;
+    height: 42px;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+    position: absolute;
+    top: 560px;
+    left: 1326px; }
+    #story-caption #story-0-caption-0 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-0-caption-1 {
+    width: 242px;
+    height: 42px;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+    position: absolute;
+    top: 374px;
+    left: 1510px; }
+    #story-caption #story-0-caption-1 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-0-caption-2 {
+    width: 242px;
+    height: 42px;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+    position: absolute;
+    top: 452px;
+    left: 1254px; }
+    #story-caption #story-0-caption-2 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-0-caption-3 {
+    text-align: left;
+    position: absolute;
+    top: 689px;
+    left: 1524px; }
+    #story-caption #story-0-caption-3 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff; }
+  #story-caption #story-0-caption-4 {
+    text-align: left;
+    position: absolute;
+    top: 737px;
+    left: 1524px; }
+    #story-caption #story-0-caption-4 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff; }
+  #story-caption #story-1-caption-0 {
+    width: 242px;
+    height: 42px;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 398px;
+    left: 751px; }
+    #story-caption #story-1-caption-0 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-2-caption-0 {
+    width: 242px;
+    text-align: center;
+    position: absolute;
+    top: 276px;
+    left: 1210px; }
+    #story-caption #story-2-caption-0 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-2-caption-1 {
+    width: 242px;
+    text-align: center;
+    position: absolute;
+    bottom: 546px;
+    left: 1420px;
+    width: 100px; }
+    #story-caption #story-2-caption-1 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-2-caption-2 {
+    width: 242px;
+    text-align: center;
+    position: absolute;
+    top: 344px;
+    left: 1260px; }
+    #story-caption #story-2-caption-2 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #000; }
+  #story-caption #story-2-caption-3 {
+    text-align: left;
+    position: absolute;
+    top: 207px;
+    left: 1486px;
+    width: 270px; }
+    #story-caption #story-2-caption-3 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff; }
+    #story-caption #story-2-caption-3 span {
+      font-size: 20px;
+      line-height: 24px; }
+  #story-caption #story-2-caption-4 {
+    text-align: left;
+    position: absolute;
+    top: 280px;
+    left: 1486px;
+    width: 270px; }
+    #story-caption #story-2-caption-4 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff; }
+    #story-caption #story-2-caption-4 span {
+      font-size: 20px;
+      line-height: 24px; }
+  #story-caption #story-2-caption-5 {
+    text-align: left;
+    position: absolute;
+    top: 355px;
+    left: 1486px;
+    width: 270px; }
+    #story-caption #story-2-caption-5 span {
+      font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+      font-size: 25px;
+      line-height: 31px;
+      font-weight: normal;
+      color: #fff; }
+    #story-caption #story-2-caption-5 span {
+      font-size: 20px;
+      line-height: 24px; }

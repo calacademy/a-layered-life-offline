@@ -1,0 +1,84 @@
+@import "./_vars.scss";
+
+#app {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: $blue;
+  background-image: url('../img/bg-water.gif');
+  background-repeat: no-repeat;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.preview {
+    overflow: hidden;
+    zoom: 0.6;
+  }
+
+  #container-loader {
+    width: 1920px;
+    height: 1080px;
+    background-color: #000;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+  }
+
+  #container-preface {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #container-story {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #container-menu {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+  }
+
+  #container-translator {
+    width: 1920px;
+    height: 45px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+  }
+
+  #container-credits {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    background-color: #000;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.4s $easing;
+    &.hide-anim {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+}

@@ -1,0 +1,154 @@
+//$blue: #01123e;
+$blueTrans: #009cde;
+$blue: #003a70;
+$blueDark: #03133b;
+$gray: #676767;
+$grayDark: #231f20;
+
+$menuAnimationFrames: 72;
+
+$introFramesBlueWhale: 33;
+$introFramesSpermWhale: 33;
+$introFramesFinWhale: 33;
+
+$outroFramesBlueWhale: 10;
+$outroFramesSpermWhale: 10;
+$outroFramesFinWhale: 9;
+
+$framesBlueWhale: 272;
+$framesSpermWhale: 280;
+$framesFinWhale: 268;
+
+$easing: cubic-bezier(.215, .61, .355, 1);
+
+@mixin caption-box {
+  width: 242px;
+  height: 42px;
+  text-align: center;
+  padding-top: 15px;
+  vertical-align: middle;
+  span {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: normal;
+    color: #000;
+  }
+}
+
+@mixin caption-list {
+  text-align: left;
+  span {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: normal;
+    color: #fff;
+  }
+}
+
+@mixin caption-arrow {
+  width: 242px;
+  text-align: center;
+  span {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Bold';
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: normal;
+    color: #000;
+  }
+}
+
+@mixin caption-style-1 {
+  div {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    color: $blueTrans;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@mixin caption-style-2 {
+  div {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    color: $blueTrans;
+    text-align: left;
+  }
+}
+
+@mixin caption-style-3 {
+  left: 322px;
+  min-height: 45px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 8px;
+  padding-left: 64px;
+  width: 500px;
+  div {
+    font-family: 'W-Book', 'SourceHanSansCN-Normal';
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    color: #000;
+
+  }
+}
+
+@mixin caption-style-4 {
+  div {
+    font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #fff;
+    text-align: left;
+  }
+}
+
+@mixin caption-style-5 {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40px;
+  div {
+    font-family: 'W-Medium', 'SourceHanSansCN-Medium';
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@mixin caption-style-6 {
+  div {
+    font-family: 'W-Medium', 'SourceHanSansCN-Medium';
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: normal;
+    color: #fff;
+    text-align: right;
+  }
+}
+
+@mixin caption-style-7 {
+  width: 170px;
+  div {
+    font-family: 'W-Medium', 'SourceHanSansCN-Medium';
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: normal;
+    color: #fff;
+    text-align: left;
+  }
+}
