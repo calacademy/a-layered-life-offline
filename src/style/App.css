@@ -7,16 +7,6 @@
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  #app.preview {
-    overflow: hidden;
-    zoom: 0.6; }
-  #app #container-loader {
-    width: 1920px;
-    height: 1080px;
-    background-color: #000;
-    position: absolute;
-    z-index: 20;
-    overflow: hidden; }
   #app #container-preface {
     width: 1920px;
     height: 1080px;

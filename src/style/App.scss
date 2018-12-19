@@ -11,20 +11,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  &.preview {
-    overflow: hidden;
-    zoom: 0.6;
-  }
-
-  #container-loader {
-    width: 1920px;
-    height: 1080px;
-    background-color: #000;
-    position: absolute;
-    z-index: 20;
-    overflow: hidden;
-  }
-
   #container-preface {
     width: 1920px;
     height: 1080px;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Loader from './Loader'
 import Translator from './Translator'
 import Credits from './Credits'
 import Menu from './Menu'
@@ -12,13 +11,11 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      display: 'loader', // loader || stories
       showCredits: false,
       currentIntro: null, // null || 0 || 1 || 2
       currentStory: null, // null || 0 || 1 || 2
       currentOutro: null, // null || 0 || 1 || 2
       currentLanguage: 'en', // en || es ||zh || tl
-      dataLoaded: false,
       dataArray: [],
       dataCredits: null,
       dataTitle: null,
@@ -30,8 +27,6 @@ class App extends Component {
       dateLastTouch: null
     }
 
-    // Loader handler
-    this.handlerLoadComplete = this._loadComplete.bind(this)
     // Menu handler
     this.handlerSelectStory = this._selectStory.bind(this)
     // Intro handler
@@ -155,13 +150,6 @@ class App extends Component {
       setTimeout(function () {
        _this._getData(n)
      }, 30000)
-    })
-  }
-
-  // Loader method
-  _loadComplete() {
-    this.setState({
-      display: 'stories'
     })
   }
 
@@ -819,9 +807,6 @@ class App extends Component {
         }
       ]
     })
-    this.setState ({
-      dataLoaded: true
-    })
   }
 
   _storyTouch() {
@@ -841,13 +826,6 @@ class App extends Component {
   render() {
     return (
       <div id="app" className={this.state.preview ? 'preview' : ''} >
-        <div id="container-loader"
-          className={this.state.display !== 'loader' ? 'hide' : ''}>
-          <Loader
-            dataLoaded={this.state.dataLoaded}
-            handlerLoadComplete={this.handlerLoadComplete}
-          />
-        </div>
         <div id="container-translator">
           <Translator
             currentLanguage = {this.state.currentLanguage}
