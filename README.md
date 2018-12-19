@@ -27,10 +27,6 @@ Find fonts.zip, slides.zip, animations.zip, and data.zip files in team Google Dr
 + Unzip and copy 'animations' directory into local root 'public' directory.
 + Unzip and copy 'data' directory into local root 'public' directory.
 
-, and
-unzip and copy  'images,' and 'movies' directories into local root
-'static' directory.
-
 ## Development and Production Builds
 
 Webpack build init scripts in package.json. Webpack config for 'start' script
